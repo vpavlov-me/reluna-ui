@@ -1,16 +1,112 @@
-# Reluna UI Design System
+# 🎨 Reluna UI Design System
 
-A comprehensive, accessible, and scalable design system for Reluna's family wealth management platform.
+[![npm version](https://badge.fury.io/js/@reluna%2Fui.svg)](https://badge.fury.io/js/@reluna%2Fui)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
+[![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@main/badge/badge-storybook.svg)](https://storybook.js.org/)
+[![Figma](https://img.shields.io/badge/Figma-Code%20Connect-F24E1E?logo=figma&logoColor=white)](https://www.figma.com/)
 
-## 🚀 Features
+> A comprehensive, accessible, and scalable design system for modern React applications with Figma Code Connect integration.
 
-- **Accessible Components**: WCAG 2.1 AA compliant with full keyboard navigation
-- **Theming System**: Light/dark themes with CSS variables and Tailwind integration
-- **Design Tokens**: Figma-synced tokens via Style Dictionary
-- **TypeScript**: Full type safety and IntelliSense support
-- **Storybook**: Interactive documentation and component playground
-- **Testing**: Comprehensive unit and accessibility testing
-- **CI/CD**: Automated versioning, testing, and publishing
+## ✨ Features
+
+- 🎯 **15+ Production-Ready Components** - Button, Input, Card, Table, Modal, and more
+- ♿ **Accessibility First** - WCAG 2.1 AA compliant with full keyboard navigation
+- 🎨 **Figma Integration** - Code Connect for seamless design-to-code workflow
+- 🌙 **Theme System** - Light/dark themes with CSS variables and Tailwind integration
+- 📚 **Storybook Documentation** - Interactive component playground and documentation
+- 🔧 **TypeScript** - Full type safety and IntelliSense support
+- 🧪 **Testing** - Comprehensive unit and accessibility testing
+- 🚀 **CI/CD Ready** - Automated versioning, testing, and publishing
+
+## 🚀 Quick Start
+
+```bash
+npm install @reluna/ui
+```
+
+```tsx
+import { Button, ThemeProvider } from '@reluna/ui'
+import '@reluna/ui/styles'
+
+function App() {
+  return (
+    <ThemeProvider theme="light">
+      <Button variant="primary" size="md">
+        Get Started
+      </Button>
+    </ThemeProvider>
+  )
+}
+```
+
+## 📖 Documentation
+
+- 📚 **[Storybook](https://your-storybook-url.com)** - Interactive component documentation
+- 🎨 **[Figma Design System](https://figma.com/your-design-system)** - Design specifications
+- 📋 **[Component API](./docs/COMPONENTS.md)** - Detailed component documentation
+- 🎭 **[Theming Guide](./docs/THEMING.md)** - Customization and theming
+
+## 🧩 Components
+
+<table>
+<tr>
+<td>
+
+**Form & Input**
+- Button
+- Input
+- Checkbox
+- Radio
+- Switch
+- Select
+- Textarea
+
+</td>
+<td>
+
+**Layout**
+- Card
+- Modal
+- Navbar
+- Sidebar
+- Table
+- Tabs
+- Accordion
+
+</td>
+<td>
+
+**Feedback**
+- Notification
+- Tooltip
+- Badge
+- Loader
+- Typography
+
+</td>
+</tr>
+</table>
+
+## 🎨 Design Tokens
+
+Design tokens are automatically synced from Figma and built using Style Dictionary:
+
+```tsx
+import { tokens } from '@reluna/ui/tokens'
+
+const MyComponent = () => (
+  <div 
+    style={{
+      color: tokens.colors.primary[500],
+      fontSize: tokens.typography.size.lg,
+      padding: tokens.spacing[4]
+    }}
+  >
+    Content
+  </div>
+)
+```
 
 ## 📦 Installation
 
