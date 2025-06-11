@@ -2,7 +2,7 @@
   "name": "@reluna/ui",
   "version": "0.1.0",
   "description": "Reluna Design System - A comprehensive UI framework for family wealth management",
-  "private": true,
+  "private": false,
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -61,10 +61,14 @@
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reluna/reluna-ui.git"
+    "url": "git+https://github.com/vpavlov-me/reluna-ui.git"
   },
+  "bugs": {
+    "url": "https://github.com/vpavlov-me/reluna-ui/issues"
+  },
+  "homepage": "https://vpavlov-me.github.io/reluna-ui",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "access": "public"
   },
   "peerDependencies": {
     "react": ">=18.0.0",

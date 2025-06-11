@@ -356,3 +356,8 @@ For questions, issues, or feature requests, please:
 ---
 
 Built with ❤️ by the Reluna Design System Team 
+
+npm run build-storybook
+# Загрузите storybook-static в GitHub Pages 
+
+npm publish 

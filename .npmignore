@@ -1,0 +1,43 @@
+# Source files
+src/
+stories/
+example/
+tests/
+coverage/
+docs/
+
+# Build artifacts
+storybook-static/
+node_modules/
+.vite/
+
+# Config files
+.storybook/
+.github/
+.husky/
+*.config.*
+tsconfig*.json
+eslint.config.js
+playwright.config.ts
+vitest*.config.ts
+figma.config.json
+style-dictionary.config.mjs
+
+# Development files
+.env*
+.DS_Store
+*.log
+*.tgz
+
+# Documentation
+*.md
+!README.md
+
+# Test files
+**/*.test.*
+**/*.spec.*
+**/__tests__/
+**/__mocks__/
+
+# Figma files
+*.figma.tsx 
