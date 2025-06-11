@@ -1,0 +1,352 @@
+/* Custom Theme Variables */
+
+/* Purple Theme */
+.theme-purple {
+  /* Primary Colors */
+  --color-primary: #8b5cf6;
+  --color-primary-dark: #7c3aed;
+  --color-primary-light: #c4b5fd;
+  --color-primary-foreground: #ffffff;
+  
+  /* Background Colors */
+  --color-background: #faf5ff;
+  --color-foreground: #581c87;
+  --color-card: #f3e8ff;
+  --color-card-foreground: #6b21a8;
+  --color-popover: #f3e8ff;
+  --color-popover-foreground: #6b21a8;
+  
+  /* Muted Colors - улучшенная контрастность */
+  --color-muted: #e9d5ff;
+  --color-muted-foreground: #6b21a8;
+  --color-accent: #ddd6fe;
+  --color-accent-foreground: #6b21a8;
+  
+  /* Border Colors - более темные для лучшей видимости */
+  --color-border: #c4b5fd;
+  --color-input: #c4b5fd;
+  --color-ring: #8b5cf6;
+  
+  /* Semantic Colors */
+  --color-success: #059669;
+  --color-warning: #d97706;
+  --color-error: #dc2626;
+  --color-info: #0284c7;
+}
+
+/* Green Theme */
+.theme-green {
+  /* Primary Colors */
+  --color-primary: #059669;
+  --color-primary-dark: #047857;
+  --color-primary-light: #6ee7b7;
+  --color-primary-foreground: #ffffff;
+  
+  /* Background Colors */
+  --color-background: #f0fdf4;
+  --color-foreground: #14532d;
+  --color-card: #dcfce7;
+  --color-card-foreground: #166534;
+  --color-popover: #dcfce7;
+  --color-popover-foreground: #166534;
+  
+  /* Muted Colors - улучшенная контрастность */
+  --color-muted: #bbf7d0;
+  --color-muted-foreground: #166534;
+  --color-accent: #a7f3d0;
+  --color-accent-foreground: #166534;
+  
+  /* Border Colors - более темные для лучшей видимости */
+  --color-border: #86efac;
+  --color-input: #86efac;
+  --color-ring: #059669;
+  
+  /* Semantic Colors */
+  --color-success: #16a34a;
+  --color-warning: #ea580c;
+  --color-error: #dc2626;
+  --color-info: #0284c7;
+}
+
+/* Orange Theme */
+.theme-orange {
+  /* Primary Colors */
+  --color-primary: #ea580c;
+  --color-primary-dark: #c2410c;
+  --color-primary-light: #fed7aa;
+  --color-primary-foreground: #ffffff;
+  
+  /* Background Colors */
+  --color-background: #fff7ed;
+  --color-foreground: #9a3412;
+  --color-card: #ffedd5;
+  --color-card-foreground: #c2410c;
+  --color-popover: #ffedd5;
+  --color-popover-foreground: #c2410c;
+  
+  /* Muted Colors - улучшенная контрастность */
+  --color-muted: #fed7aa;
+  --color-muted-foreground: #c2410c;
+  --color-accent: #fde68a;
+  --color-accent-foreground: #c2410c;
+  
+  /* Border Colors - более темные для лучшей видимости */
+  --color-border: #fdba74;
+  --color-input: #fdba74;
+  --color-ring: #ea580c;
+  
+  /* Semantic Colors */
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-error: #dc2626;
+  --color-info: #0284c7;
+}
+
+/* Theme-specific component styles with improved contrast */
+
+/* Purple Theme Components */
+.theme-purple .bg-primary {
+  background-color: var(--color-primary);
+}
+
+.theme-purple .text-primary {
+  color: var(--color-primary);
+}
+
+.theme-purple .border-primary {
+  border-color: var(--color-primary);
+}
+
+.theme-purple .bg-card {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+}
+
+.theme-purple .text-card-foreground {
+  color: var(--color-card-foreground);
+}
+
+.theme-purple .bg-secondary {
+  background-color: var(--color-accent);
+  border: 1px solid var(--color-border);
+}
+
+.theme-purple .text-secondary-foreground {
+  color: var(--color-accent-foreground);
+}
+
+/* Green Theme Components */
+.theme-green .bg-primary {
+  background-color: var(--color-primary);
+}
+
+.theme-green .text-primary {
+  color: var(--color-primary);
+}
+
+.theme-green .border-primary {
+  border-color: var(--color-primary);
+}
+
+.theme-green .bg-card {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+}
+
+.theme-green .text-card-foreground {
+  color: var(--color-card-foreground);
+}
+
+.theme-green .bg-secondary {
+  background-color: var(--color-accent);
+  border: 1px solid var(--color-border);
+}
+
+.theme-green .text-secondary-foreground {
+  color: var(--color-accent-foreground);
+}
+
+/* Orange Theme Components */
+.theme-orange .bg-primary {
+  background-color: var(--color-primary);
+}
+
+.theme-orange .text-primary {
+  color: var(--color-primary);
+}
+
+.theme-orange .border-primary {
+  border-color: var(--color-primary);
+}
+
+.theme-orange .bg-card {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+}
+
+.theme-orange .text-card-foreground {
+  color: var(--color-card-foreground);
+}
+
+.theme-orange .bg-secondary {
+  background-color: var(--color-accent);
+  border: 1px solid var(--color-border);
+}
+
+.theme-orange .text-secondary-foreground {
+  color: var(--color-accent-foreground);
+}
+
+/* Button theme overrides with improved contrast */
+.theme-purple .btn-primary,
+.theme-purple button[data-variant="default"] {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+.theme-purple .btn-primary:hover,
+.theme-purple button[data-variant="default"]:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+.theme-green .btn-primary,
+.theme-green button[data-variant="default"] {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+.theme-green .btn-primary:hover,
+.theme-green button[data-variant="default"]:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+.theme-orange .btn-primary,
+.theme-orange button[data-variant="default"] {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+.theme-orange .btn-primary:hover,
+.theme-orange button[data-variant="default"]:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+/* Input theme overrides with better visibility */
+.theme-purple .input-field,
+.theme-purple input[type="text"],
+.theme-purple input[type="email"],
+.theme-purple input[type="password"],
+.theme-purple textarea {
+  border-color: var(--color-border);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+.theme-purple .input-field:focus,
+.theme-purple input:focus,
+.theme-purple textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-primary-light);
+}
+
+.theme-green .input-field,
+.theme-green input[type="text"],
+.theme-green input[type="email"],
+.theme-green input[type="password"],
+.theme-green textarea {
+  border-color: var(--color-border);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+.theme-green .input-field:focus,
+.theme-green input:focus,
+.theme-green textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-primary-light);
+}
+
+.theme-orange .input-field,
+.theme-orange input[type="text"],
+.theme-orange input[type="email"],
+.theme-orange input[type="password"],
+.theme-orange textarea {
+  border-color: var(--color-border);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+.theme-orange .input-field:focus,
+.theme-orange input:focus,
+.theme-orange textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-primary-light);
+}
+
+/* Card theme overrides with better borders */
+.theme-purple .card,
+.theme-purple [data-component="card"] {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  color: var(--color-card-foreground);
+}
+
+.theme-green .card,
+.theme-green [data-component="card"] {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  color: var(--color-card-foreground);
+}
+
+.theme-orange .card,
+.theme-orange [data-component="card"] {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  color: var(--color-card-foreground);
+}
+
+/* Badge theme overrides */
+.theme-purple .badge-primary,
+.theme-purple [data-variant="default"] {
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+.theme-green .badge-primary,
+.theme-green [data-variant="default"] {
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+.theme-orange .badge-primary,
+.theme-orange [data-variant="default"] {
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+/* Improved accessibility for all themes */
+.theme-purple *:focus-visible,
+.theme-green *:focus-visible,
+.theme-orange *:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Better contrast for disabled states */
+.theme-purple *:disabled,
+.theme-green *:disabled,
+.theme-orange *:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+} 

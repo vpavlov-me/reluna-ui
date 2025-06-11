@@ -1,0 +1,80 @@
+{
+  "typography": {
+    "fontFamily": {
+      "primary": {
+        "value": "PPObjectSans, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+        "type": "fontFamily"
+      },
+      "mono": {
+        "value": "JetBrains Mono, Fira Code, SF Mono, Consolas, monospace",
+        "type": "fontFamily"
+      }
+    },
+    "fontWeight": {
+      "regular": {
+        "value": 400,
+        "type": "fontWeight"
+      },
+      "medium": {
+        "value": 500,
+        "type": "fontWeight"
+      },
+      "bold": {
+        "value": 700,
+        "type": "fontWeight"
+      }
+    },
+    "fontSize": {
+      "xs": {
+        "value": 10,
+        "type": "dimension"
+      },
+      "sm": {
+        "value": 12,
+        "type": "dimension"
+      },
+      "base": {
+        "value": 14,
+        "type": "dimension"
+      },
+      "md": {
+        "value": 16,
+        "type": "dimension"
+      },
+      "lg": {
+        "value": 20,
+        "type": "dimension"
+      },
+      "xl": {
+        "value": 22,
+        "type": "dimension"
+      },
+      "2xl": {
+        "value": 28,
+        "type": "dimension"
+      },
+      "3xl": {
+        "value": 32,
+        "type": "dimension"
+      },
+      "4xl": {
+        "value": 50,
+        "type": "dimension"
+      }
+    },
+    "lineHeight": {
+      "tight": {
+        "value": 1.2,
+        "type": "number"
+      },
+      "normal": {
+        "value": 1.5,
+        "type": "number"
+      },
+      "relaxed": {
+        "value": 1.75,
+        "type": "number"
+      }
+    }
+  }
+} 

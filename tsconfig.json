@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+
+    /* Path mapping */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@/components/*": ["src/components/*"],
+      "@/tokens/*": ["src/tokens/*"],
+      "@/themes/*": ["src/themes/*"],
+      "@/utils/*": ["src/utils/*"]
+    },
+
+    /* Declaration */
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "dist"
+  },
+  "include": [
+    "src/**/*",
+    "stories/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "storybook-static"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }]
+} 

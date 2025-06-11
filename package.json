@@ -1,0 +1,154 @@
+{
+  "name": "@reluna/ui",
+  "version": "0.1.0",
+  "description": "Reluna Design System - A comprehensive UI framework for family wealth management",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles": "./dist/styles.css",
+    "./tokens": "./dist/tokens/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "example": "vite --config example/vite.config.ts",
+    "build": "npm run build:tokens && npm run build:lib && npm run build:storybook",
+    "build:lib": "vite build",
+    "build:tokens": "style-dictionary build --config style-dictionary.config.mjs",
+    "build:storybook": "storybook build",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:unit": "vitest run --coverage",
+    "test:a11y": "vitest run --config vitest.a11y.config.ts",
+    "test:e2e": "playwright test",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "type-check": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "chromatic": "npx chromatic --project-token=your-chromatic-token",
+    "release": "semantic-release",
+    "prepare": "husky install",
+    "analyze": "ANALYZE=true npm run build:lib",
+    "size-limit": "size-limit",
+    "docs:generate": "typedoc src/index.ts --out docs/api",
+    "clean": "rimraf dist storybook-static coverage",
+    "prepack": "npm run clean && npm run build",
+    "figma:connect": "figma connect create",
+    "figma:publish": "figma connect publish",
+    "figma:unpublish": "figma connect unpublish --all"
+  },
+  "keywords": [
+    "design-system",
+    "ui-components",
+    "react",
+    "tailwind",
+    "reluna",
+    "wealth-management"
+  ],
+  "author": "Reluna Team",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reluna/reluna-ui.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^4.0.0",
+    "@figma/code-connect": "^1.0.0",
+    "@eslint/js": "^9.9.0",
+    "@playwright/test": "^1.40.0",
+    "@size-limit/preset-small-lib": "^11.0.0",
+    "@storybook/addon-a11y": "^9.0.8",
+    "@storybook/addon-backgrounds": "^9.0.8",
+    "@storybook/addon-controls": "^9.0.8",
+    "@storybook/addon-docs": "^9.0.8",
+    "@storybook/addon-links": "^9.0.8",
+    "@storybook/addon-measure": "^9.0.8",
+    "@storybook/addon-onboarding": "^9.0.8",
+    "@storybook/addon-outline": "^9.0.8",
+    "@storybook/addon-viewport": "^9.0.8",
+    "@storybook/react-vite": "^9.0.8",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/node": "^22.5.4",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.5.0",
+    "@typescript-eslint/parser": "^8.5.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/coverage-v8": "^2.1.9",
+    "autoprefixer": "^10.4.20",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "eslint-plugin-storybook": "^9.0.8",
+    "globals": "^15.9.0",
+    "husky": "^9.1.5",
+    "jest-axe": "^8.0.0",
+    "jsdom": "^25.0.0",
+    "lint-staged": "^15.2.10",
+    "lucide-react": "^0.441.0",
+    "postcss": "^8.4.45",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rimraf": "^5.0.0",
+    "rollup-plugin-visualizer": "^6.0.3",
+    "semantic-release": "^24.1.0",
+    "size-limit": "^11.0.0",
+    "storybook": "^9.0.8",
+    "style-dictionary": "^4.0.1",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss": "^3.4.10",
+    "tailwindcss-animate": "^1.0.7",
+    "typedoc": "^0.25.0",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.1",
+    "vite": "^5.4.1",
+    "vite-plugin-dts": "^4.2.1",
+    "vitest": "^2.0.5",
+    "webpack-bundle-analyzer": "^4.10.2"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "size-limit": [
+    {
+      "path": "dist/index.js",
+      "limit": "50 KB"
+    }
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "overrides": {
+    "storybook": "$storybook"
+  }
+}

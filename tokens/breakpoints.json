@@ -1,0 +1,83 @@
+{
+  "breakpoint": {
+    "xs": {
+      "value": "320px",
+      "comment": "Extra small devices"
+    },
+    "sm": {
+      "value": "640px",
+      "comment": "Small devices (landscape phones)"
+    },
+    "md": {
+      "value": "768px",
+      "comment": "Medium devices (tablets)"
+    },
+    "lg": {
+      "value": "1024px",
+      "comment": "Large devices (laptops)"
+    },
+    "xl": {
+      "value": "1280px",
+      "comment": "Extra large devices (desktops)"
+    },
+    "2xl": {
+      "value": "1536px",
+      "comment": "2X large devices (large desktops)"
+    },
+    "semantic": {
+      "mobile": {
+        "value": "{breakpoint.sm}"
+      },
+      "tablet": {
+        "value": "{breakpoint.md}"
+      },
+      "desktop": {
+        "value": "{breakpoint.lg}"
+      },
+      "wide": {
+        "value": "{breakpoint.xl}"
+      }
+    }
+  },
+  "zIndex": {
+    "hide": {
+      "value": "-1"
+    },
+    "auto": {
+      "value": "auto"
+    },
+    "base": {
+      "value": "0"
+    },
+    "docked": {
+      "value": "10"
+    },
+    "dropdown": {
+      "value": "1000"
+    },
+    "sticky": {
+      "value": "1100"
+    },
+    "banner": {
+      "value": "1200"
+    },
+    "overlay": {
+      "value": "1300"
+    },
+    "modal": {
+      "value": "1400"
+    },
+    "popover": {
+      "value": "1500"
+    },
+    "skipLink": {
+      "value": "1600"
+    },
+    "toast": {
+      "value": "1700"
+    },
+    "tooltip": {
+      "value": "1800"
+    }
+  }
+} 

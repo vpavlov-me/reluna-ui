@@ -1,0 +1,98 @@
+{
+  "color": {
+    "text": {
+      "primary": {
+        "value": "rgba(0, 0, 0, 1)",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "rgba(0, 0, 0, 0.6)",
+        "type": "color"
+      },
+      "tertiary": {
+        "value": "rgba(0, 0, 0, 0.3)",
+        "type": "color"
+      },
+      "link": {
+        "value": "rgba(0, 0, 255, 1)",
+        "type": "color"
+      },
+      "inverse": {
+        "value": "rgba(255, 255, 255, 1)",
+        "type": "color"
+      }
+    },
+    "background": {
+      "primary": {
+        "value": "rgba(255, 255, 255, 1)",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "rgba(0, 0, 0, 0.05)",
+        "type": "color"
+      },
+      "tertiary": {
+        "value": "rgba(0, 0, 0, 0.03)",
+        "type": "color"
+      },
+      "accent": {
+        "value": "rgba(78, 207, 189, 1)",
+        "type": "color"
+      },
+      "overlay": {
+        "value": "rgba(0, 0, 0, 0.75)",
+        "type": "color"
+      },
+      "inverse": {
+        "value": "rgba(0, 0, 0, 1)",
+        "type": "color"
+      }
+    },
+    "border": {
+      "primary": {
+        "value": "rgba(0, 0, 0, 0.1)",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "rgba(0, 0, 0, 0.05)",
+        "type": "color"
+      }
+    },
+    "status": {
+      "success": {
+        "value": "rgba(0, 128, 0, 1)",
+        "type": "color"
+      },
+      "error": {
+        "value": "rgba(255, 0, 0, 1)",
+        "type": "color"
+      },
+      "warning": {
+        "value": "rgba(255, 165, 0, 1)",
+        "type": "color"
+      },
+      "info": {
+        "value": "rgba(0, 0, 255, 1)",
+        "type": "color"
+      }
+    },
+    "icon": {
+      "primary": {
+        "value": "rgba(0, 0, 0, 1)",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "rgba(0, 0, 0, 0.5)",
+        "type": "color"
+      },
+      "tertiary": {
+        "value": "rgba(0, 0, 0, 0.3)",
+        "type": "color"
+      },
+      "inverse": {
+        "value": "rgba(255, 255, 255, 1)",
+        "type": "color"
+      }
+    }
+  }
+} 

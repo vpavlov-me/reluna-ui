@@ -1,0 +1,134 @@
+@import './accessibility.css';
+@import './fonts.css';
+@import '../tokens/variables.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Основные цвета на основе Reluna токенов */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 174 62% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 174 62% 56%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 120 100% 25%;
+    --success-foreground: 0 0% 100%;
+    --warning: 39 100% 50%;
+    --warning-foreground: 0 0% 0%;
+    --error: 0 100% 50%;
+    --error-foreground: 0 0% 100%;
+    --info: 240 100% 50%;
+    --info-foreground: 0 0% 100%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 174 62% 56%;
+    --radius: 0.5rem;
+    
+    /* Шрифты */
+    --font-sans: var(--typography-font-family-primary);
+    --font-mono: var(--typography-font-family-mono);
+    --font-display: var(--typography-font-family-primary);
+  }
+
+  .dark {
+    /* Темная тема */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 174 62% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 174 62% 56%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 120 100% 25%;
+    --success-foreground: 0 0% 100%;
+    --warning: 39 100% 50%;
+    --warning-foreground: 0 0% 0%;
+    --error: 0 62% 50%;
+    --error-foreground: 0 0% 100%;
+    --info: 240 100% 50%;
+    --info-foreground: 0 0% 100%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 174 62% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .reluna-focus {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+  }
+  
+  .reluna-button-base {
+    @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors reluna-focus disabled:pointer-events-none disabled:opacity-50;
+  }
+  
+  .reluna-input-base {
+    @apply flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground reluna-focus disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .reluna-card {
+    @apply bg-card text-card-foreground border border-border shadow-sm;
+  }
+  
+  .reluna-secondary {
+    @apply bg-secondary text-secondary-foreground border border-border;
+  }
+  
+  .reluna-muted {
+    @apply bg-muted text-muted-foreground;
+  }
+  
+  .reluna-interactive {
+    @apply transition-colors duration-200;
+  }
+  
+  .reluna-interactive:hover {
+    @apply opacity-90;
+  }
+  
+  .reluna-interactive:active {
+    @apply opacity-80;
+  }
+  
+  .reluna-border-visible {
+    @apply border-2 border-border;
+  }
+  
+  .reluna-high-contrast {
+    @apply bg-foreground text-background;
+  }
+} 

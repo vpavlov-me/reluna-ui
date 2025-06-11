@@ -1,0 +1,74 @@
+{
+  "radius": {
+    "none": {
+      "value": "0px"
+    },
+    "xs": {
+      "value": "0.125rem",
+      "comment": "2px"
+    },
+    "sm": {
+      "value": "0.25rem",
+      "comment": "4px"
+    },
+    "md": {
+      "value": "0.375rem",
+      "comment": "6px"
+    },
+    "lg": {
+      "value": "0.5rem",
+      "comment": "8px"
+    },
+    "xl": {
+      "value": "0.75rem",
+      "comment": "12px"
+    },
+    "2xl": {
+      "value": "1rem",
+      "comment": "16px"
+    },
+    "3xl": {
+      "value": "1.5rem",
+      "comment": "24px"
+    },
+    "full": {
+      "value": "9999px",
+      "comment": "Fully rounded"
+    },
+    "semantic": {
+      "button": {
+        "value": "{radius.md}"
+      },
+      "input": {
+        "value": "{radius.md}"
+      },
+      "card": {
+        "value": "{radius.lg}"
+      },
+      "modal": {
+        "value": "{radius.xl}"
+      },
+      "badge": {
+        "value": "{radius.full}"
+      },
+      "avatar": {
+        "value": "{radius.full}"
+      },
+      "tooltip": {
+        "value": "{radius.sm}"
+      },
+      "dropdown": {
+        "value": "{radius.lg}"
+      },
+      "tab": {
+        "value": "{radius.md}"
+      },
+      "checkbox": {
+        "value": "{radius.sm}"
+      },
+      "switch": {
+        "value": "{radius.full}"
+      }
+    }
+  }
+} 
