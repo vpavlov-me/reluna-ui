@@ -1,0 +1,99 @@
+{
+  "spacing": {
+    "0": {
+      "value": "0px",
+      "type": "dimension",
+      "description": "No spacing"
+    },
+    "1": {
+      "value": "4px",
+      "type": "dimension",
+      "description": "Extra small spacing"
+    },
+    "2": {
+      "value": "8px",
+      "type": "dimension",
+      "description": "Small spacing"
+    },
+    "3": {
+      "value": "12px",
+      "type": "dimension",
+      "description": "Medium small spacing"
+    },
+    "4": {
+      "value": "16px",
+      "type": "dimension",
+      "description": "Medium spacing"
+    },
+    "5": {
+      "value": "20px",
+      "type": "dimension",
+      "description": "Medium large spacing"
+    },
+    "6": {
+      "value": "24px",
+      "type": "dimension",
+      "description": "Large spacing"
+    },
+    "7": {
+      "value": "28px",
+      "type": "dimension",
+      "description": "Extra large spacing"
+    },
+    "8": {
+      "value": "32px",
+      "type": "dimension",
+      "description": "2X large spacing"
+    },
+    "9": {
+      "value": "36px",
+      "type": "dimension",
+      "description": "3X large spacing"
+    },
+    "10": {
+      "value": "40px",
+      "type": "dimension",
+      "description": "4X large spacing"
+    },
+    "11": {
+      "value": "44px",
+      "type": "dimension",
+      "description": "5X large spacing"
+    },
+    "12": {
+      "value": "48px",
+      "type": "dimension",
+      "description": "6X large spacing"
+    },
+    "14": {
+      "value": "56px",
+      "type": "dimension",
+      "description": "7X large spacing"
+    },
+    "16": {
+      "value": "64px",
+      "type": "dimension",
+      "description": "8X large spacing"
+    },
+    "20": {
+      "value": "80px",
+      "type": "dimension",
+      "description": "10X large spacing"
+    },
+    "24": {
+      "value": "96px",
+      "type": "dimension",
+      "description": "12X large spacing"
+    },
+    "28": {
+      "value": "112px",
+      "type": "dimension",
+      "description": "14X large spacing"
+    },
+    "32": {
+      "value": "128px",
+      "type": "dimension",
+      "description": "16X large spacing"
+    }
+  }
+} 
