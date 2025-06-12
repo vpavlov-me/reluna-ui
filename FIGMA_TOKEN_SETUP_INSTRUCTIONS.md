@@ -25,6 +25,9 @@
 # Экспортируйте новый токен
 export FIGMA_ACCESS_TOKEN="ваш_новый_токен"
 
+# Или добавьте в .env файл (рекомендуется для безопасности):
+echo "FIGMA_ACCESS_TOKEN=ваш_новый_токен" >> .env
+
 # Опубликуйте Code Connect файлы
 npx figma connect publish
 ```

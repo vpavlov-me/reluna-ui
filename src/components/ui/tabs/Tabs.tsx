@@ -125,7 +125,9 @@ const Tabs = forwardRef<HTMLDivElement, TabsProps>(
 Tabs.displayName = 'Tabs'
 
 // TabsList component
-export interface TabsListProps extends React.HTMLAttributes<HTMLDivElement> {}
+export interface TabsListProps extends React.HTMLAttributes<HTMLDivElement> {
+  orientation?: 'horizontal' | 'vertical'
+}
 
 const TabsList = forwardRef<HTMLDivElement, TabsListProps>(
   ({ className, ...props }, ref) => {

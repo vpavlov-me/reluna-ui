@@ -60,13 +60,14 @@ const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
   }, ref) => {
     const textareaRef = useRef<HTMLTextAreaElement>(null)
     const [internalValue, setInternalValue] = React.useState(defaultValue || '')
+    const generatedId = React.useId()
     const currentValue = value !== undefined ? value : internalValue
     const characterCount = String(currentValue).length
 
     // Merge refs
     React.useImperativeHandle(ref, () => textareaRef.current!, [])
 
-    const textareaId = id || `textarea-${React.useId()}`
+    const textareaId = id || `textarea-${generatedId}`
     const errorId = error ? `${textareaId}-error` : undefined
     const helperTextId = helperText ? `${textareaId}-helper` : undefined
     const characterCountId = showCharacterCount ? `${textareaId}-count` : undefined

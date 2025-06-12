@@ -1,4 +1,4 @@
-import { ReactNode, HTMLAttributes, ComponentPropsWithoutRef, ElementType } from 'react'
+import { ReactNode, ComponentPropsWithoutRef, ElementType } from 'react'
 
 // Base component props with polymorphic support
 export interface BaseComponentProps {
@@ -10,12 +10,12 @@ export interface BaseComponentProps {
 // Polymorphic component props
 export type PolymorphicRef<C extends ElementType> = ComponentPropsWithoutRef<C>['ref']
 
-export type PolymorphicComponentProp<C extends ElementType, Props = {}> = {
+export type PolymorphicComponentProp<C extends ElementType, Props = object> = {
   as?: C
 } & Props &
   Omit<ComponentPropsWithoutRef<C>, keyof Props | 'as'>
 
-export type PolymorphicComponent<DefaultElement extends ElementType, Props = {}> = <
+export type PolymorphicComponent<DefaultElement extends ElementType, Props = object> = <
   C extends ElementType = DefaultElement
 >(
   props: PolymorphicComponentProp<C, Props> & { ref?: PolymorphicRef<C> }

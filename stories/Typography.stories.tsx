@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Typography } from '../src/components/ui/typography/Typography'
 import { Heading, Text, Label, Code, Display } from '../src/components/ui/typography';
-import { Card, CardContent, CardHeader, CardTitle } from '../src/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '../src/components/ui/card/Card';
 
 const meta: Meta<typeof Typography> = {
   title: 'Design System/Typography',

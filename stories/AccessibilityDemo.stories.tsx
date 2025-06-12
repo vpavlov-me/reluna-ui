@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from '../src/components/ui/button/Button';
-import { Input } from '../src/components/ui/input';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../src/components/ui/card';
-import { Badge } from '../src/components/ui/badge';
+import { Input } from '../src/components/ui/input/Input';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../src/components/ui/card/Card';
+import { Badge } from '../src/components/ui/badge/Badge';
 
 const meta: Meta = {
   title: 'Design System/Accessibility Demo',

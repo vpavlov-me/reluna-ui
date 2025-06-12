@@ -46,6 +46,7 @@ function App() {
 - 🎨 **[Figma Design System](https://figma.com/your-design-system)** - Design specifications
 - 📋 **[Component API](./docs/COMPONENTS.md)** - Detailed component documentation
 - 🎭 **[Theming Guide](./docs/THEMING.md)** - Customization and theming
+- 🔒 **[Security Guidelines](./SECURITY.md)** - Security best practices and token management
 
 ## 🧩 Components
 

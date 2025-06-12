@@ -28,6 +28,8 @@
 #### Вариант 1: Переменная окружения
 ```bash
 export FIGMA_ACCESS_TOKEN="your_token_here"
+# Или добавьте в .env файл (рекомендуется):
+echo "FIGMA_ACCESS_TOKEN=your_token_here" >> .env
 npm run figma:publish
 ```
 

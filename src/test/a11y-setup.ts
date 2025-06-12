@@ -4,10 +4,19 @@ import { configure } from '@testing-library/react'
 // Configure testing library
 configure({
   testIdAttribute: 'data-testid',
-})
+} as any)
 
 // Global accessibility test configuration
-global.axeConfig = {
+declare global {
+  interface Global {
+    axeConfig: {
+      rules: Record<string, { enabled: boolean }>
+      tags: string[]
+    }
+  }
+}
+
+(global as any).axeConfig = {
   rules: {
     // Disable color-contrast rule for tests (can be flaky in jsdom)
     'color-contrast': { enabled: false },
