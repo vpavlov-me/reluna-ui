@@ -1,0 +1,315 @@
+{
+  "component": {
+    "button": {
+      "primary": {
+        "background": {
+          "value": "{color.primitive.blue.500}",
+          "type": "color",
+          "description": "Primary button background"
+        },
+        "backgroundHover": {
+          "value": "{color.primitive.blue.600}",
+          "type": "color",
+          "description": "Primary button hover background"
+        },
+        "backgroundPressed": {
+          "value": "{color.primitive.blue.700}",
+          "type": "color",
+          "description": "Primary button pressed background"
+        },
+        "backgroundDisabled": {
+          "value": "{color.primitive.gray.300}",
+          "type": "color",
+          "description": "Primary button disabled background"
+        },
+        "text": {
+          "value": "{color.primitive.white}",
+          "type": "color",
+          "description": "Primary button text color"
+        },
+        "textDisabled": {
+          "value": "{color.primitive.gray.500}",
+          "type": "color",
+          "description": "Primary button disabled text color"
+        },
+        "border": {
+          "value": "transparent",
+          "type": "color",
+          "description": "Primary button border color"
+        },
+        "borderRadius": {
+          "value": "{radius.md}",
+          "type": "dimension",
+          "description": "Primary button border radius"
+        },
+        "paddingX": {
+          "value": "{spacing.4}",
+          "type": "dimension",
+          "description": "Primary button horizontal padding"
+        },
+        "paddingY": {
+          "value": "{spacing.2}",
+          "type": "dimension",
+          "description": "Primary button vertical padding"
+        }
+      },
+      "secondary": {
+        "background": {
+          "value": "transparent",
+          "type": "color",
+          "description": "Secondary button background"
+        },
+        "backgroundHover": {
+          "value": "{color.primitive.gray.50}",
+          "type": "color",
+          "description": "Secondary button hover background"
+        },
+        "backgroundPressed": {
+          "value": "{color.primitive.gray.100}",
+          "type": "color",
+          "description": "Secondary button pressed background"
+        },
+        "text": {
+          "value": "{color.semantic.text.primary}",
+          "type": "color",
+          "description": "Secondary button text color"
+        },
+        "textDisabled": {
+          "value": "{color.primitive.gray.400}",
+          "type": "color",
+          "description": "Secondary button disabled text color"
+        },
+        "border": {
+          "value": "{color.semantic.border.primary}",
+          "type": "color",
+          "description": "Secondary button border color"
+        },
+        "borderHover": {
+          "value": "{color.primitive.gray.300}",
+          "type": "color",
+          "description": "Secondary button hover border color"
+        },
+        "borderRadius": {
+          "value": "{radius.md}",
+          "type": "dimension",
+          "description": "Secondary button border radius"
+        },
+        "paddingX": {
+          "value": "{spacing.4}",
+          "type": "dimension",
+          "description": "Secondary button horizontal padding"
+        },
+        "paddingY": {
+          "value": "{spacing.2}",
+          "type": "dimension",
+          "description": "Secondary button vertical padding"
+        }
+      },
+      "ghost": {
+        "background": {
+          "value": "transparent",
+          "type": "color",
+          "description": "Ghost button background"
+        },
+        "backgroundHover": {
+          "value": "{color.primitive.gray.100}",
+          "type": "color",
+          "description": "Ghost button hover background"
+        },
+        "text": {
+          "value": "{color.semantic.text.primary}",
+          "type": "color",
+          "description": "Ghost button text color"
+        },
+        "textHover": {
+          "value": "{color.semantic.text.primary}",
+          "type": "color",
+          "description": "Ghost button hover text color"
+        },
+        "border": {
+          "value": "transparent",
+          "type": "color",
+          "description": "Ghost button border color"
+        },
+        "borderRadius": {
+          "value": "{radius.md}",
+          "type": "dimension",
+          "description": "Ghost button border radius"
+        },
+        "paddingX": {
+          "value": "{spacing.4}",
+          "type": "dimension",
+          "description": "Ghost button horizontal padding"
+        },
+        "paddingY": {
+          "value": "{spacing.2}",
+          "type": "dimension",
+          "description": "Ghost button vertical padding"
+        }
+      }
+    },
+    "input": {
+      "background": {
+        "value": "{color.semantic.background.primary}",
+        "type": "color",
+        "description": "Input background color"
+      },
+      "backgroundDisabled": {
+        "value": "{color.primitive.gray.50}",
+        "type": "color",
+        "description": "Input disabled background color"
+      },
+      "text": {
+        "value": "{color.semantic.text.primary}",
+        "type": "color",
+        "description": "Input text color"
+      },
+      "textPlaceholder": {
+        "value": "{color.semantic.text.tertiary}",
+        "type": "color",
+        "description": "Input placeholder text color"
+      },
+      "border": {
+        "value": "{color.semantic.border.primary}",
+        "type": "color",
+        "description": "Input border color"
+      },
+      "borderHover": {
+        "value": "{color.primitive.gray.300}",
+        "type": "color",
+        "description": "Input hover border color"
+      },
+      "borderFocus": {
+        "value": "{color.semantic.border.focus}",
+        "type": "color",
+        "description": "Input focus border color"
+      },
+      "borderError": {
+        "value": "{color.semantic.status.error}",
+        "type": "color",
+        "description": "Input error border color"
+      },
+      "borderRadius": {
+        "value": "{radius.md}",
+        "type": "dimension",
+        "description": "Input border radius"
+      },
+      "paddingX": {
+        "value": "{spacing.3}",
+        "type": "dimension",
+        "description": "Input horizontal padding"
+      },
+      "paddingY": {
+        "value": "{spacing.2}",
+        "type": "dimension",
+        "description": "Input vertical padding"
+      }
+    },
+    "card": {
+      "background": {
+        "value": "{color.semantic.background.primary}",
+        "type": "color",
+        "description": "Card background color"
+      },
+      "border": {
+        "value": "{color.semantic.border.secondary}",
+        "type": "color",
+        "description": "Card border color"
+      },
+      "borderRadius": {
+        "value": "{radius.lg}",
+        "type": "dimension",
+        "description": "Card border radius"
+      },
+      "padding": {
+        "value": "{spacing.6}",
+        "type": "dimension",
+        "description": "Card padding"
+      },
+      "shadow": {
+        "value": "{shadow.sm}",
+        "type": "boxShadow",
+        "description": "Card shadow"
+      }
+    },
+    "modal": {
+      "background": {
+        "value": "{color.semantic.background.primary}",
+        "type": "color",
+        "description": "Modal background color"
+      },
+      "overlay": {
+        "value": "{color.semantic.background.overlay}",
+        "type": "color",
+        "description": "Modal overlay background color"
+      },
+      "border": {
+        "value": "{color.semantic.border.secondary}",
+        "type": "color",
+        "description": "Modal border color"
+      },
+      "borderRadius": {
+        "value": "{radius.lg}",
+        "type": "dimension",
+        "description": "Modal border radius"
+      },
+      "padding": {
+        "value": "{spacing.6}",
+        "type": "dimension",
+        "description": "Modal padding"
+      },
+      "shadow": {
+        "value": "{shadow.xl}",
+        "type": "boxShadow",
+        "description": "Modal shadow"
+      }
+    },
+    "table": {
+      "headerBackground": {
+        "value": "{color.semantic.background.secondary}",
+        "type": "color",
+        "description": "Table header background color"
+      },
+      "headerText": {
+        "value": "{color.semantic.text.primary}",
+        "type": "color",
+        "description": "Table header text color"
+      },
+      "rowBackground": {
+        "value": "{color.semantic.background.primary}",
+        "type": "color",
+        "description": "Table row background color"
+      },
+      "rowBackgroundHover": {
+        "value": "{color.semantic.background.secondary}",
+        "type": "color",
+        "description": "Table row hover background color"
+      },
+      "rowText": {
+        "value": "{color.semantic.text.primary}",
+        "type": "color",
+        "description": "Table row text color"
+      },
+      "border": {
+        "value": "{color.semantic.border.primary}",
+        "type": "color",
+        "description": "Table border color"
+      },
+      "borderRadius": {
+        "value": "{radius.md}",
+        "type": "dimension",
+        "description": "Table border radius"
+      },
+      "cellPaddingX": {
+        "value": "{spacing.4}",
+        "type": "dimension",
+        "description": "Table cell horizontal padding"
+      },
+      "cellPaddingY": {
+        "value": "{spacing.3}",
+        "type": "dimension",
+        "description": "Table cell vertical padding"
+      }
+    }
+  }
+} 

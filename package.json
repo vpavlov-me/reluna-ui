@@ -13,7 +13,11 @@
       "types": "./dist/index.d.ts"
     },
     "./styles": "./dist/styles.css",
-    "./tokens": "./dist/tokens/index.js"
+    "./tokens": "./dist/tokens/index.js",
+    "./tokens/css": "./tokens/build/css/tokens.css",
+    "./tokens/scss": "./tokens/build/scss/_tokens.scss",
+    "./tokens/json": "./tokens/build/json/tokens.json",
+    "./tokens/react-native": "./tokens/build/react-native/tokens.js"
   },
   "files": [
     "dist",
@@ -26,6 +30,7 @@
     "build": "npm run build:tokens && npm run build:lib && npm run build:storybook",
     "build:lib": "vite build",
     "build:tokens": "style-dictionary build --config style-dictionary.config.mjs",
+    "build:tokens:enhanced": "style-dictionary build --config tokens/style-dictionary.config.enhanced.mjs",
     "build:storybook": "storybook build",
     "test": "vitest",
     "test:ui": "vitest --ui",

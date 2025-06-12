@@ -1,0 +1,111 @@
+{
+  "color": {
+    "semantic": {
+      "background": {
+        "primary": {
+          "value": "{color.primitive.gray.900}",
+          "type": "color",
+          "description": "Primary background in dark theme"
+        },
+        "secondary": {
+          "value": "{color.primitive.gray.800}",
+          "type": "color",
+          "description": "Secondary background in dark theme"
+        },
+        "tertiary": {
+          "value": "{color.primitive.gray.700}",
+          "type": "color",
+          "description": "Tertiary background in dark theme"
+        }
+      },
+      "text": {
+        "primary": {
+          "value": "{color.primitive.gray.50}",
+          "type": "color",
+          "description": "Primary text color in dark theme"
+        },
+        "secondary": {
+          "value": "{color.primitive.gray.300}",
+          "type": "color",
+          "description": "Secondary text color in dark theme"
+        },
+        "disabled": {
+          "value": "{color.primitive.gray.500}",
+          "type": "color",
+          "description": "Disabled text color in dark theme"
+        }
+      },
+      "border": {
+        "default": {
+          "value": "{color.primitive.gray.600}",
+          "type": "color",
+          "description": "Default border color in dark theme"
+        },
+        "subtle": {
+          "value": "{color.primitive.gray.700}",
+          "type": "color",
+          "description": "Subtle border color in dark theme"
+        }
+      },
+      "focus": {
+        "value": "{color.primitive.blue.400}",
+        "type": "color",
+        "description": "Focus ring color in dark theme"
+      }
+    }
+  },
+  "button": {
+    "primary": {
+      "background": {
+        "default": {
+          "value": "{color.primitive.blue.600}",
+          "type": "color",
+          "description": "Primary button background in dark theme"
+        },
+        "hover": {
+          "value": "{color.primitive.blue.500}",
+          "type": "color",
+          "description": "Primary button background on hover in dark theme"
+        },
+        "pressed": {
+          "value": "{color.primitive.blue.700}",
+          "type": "color",
+          "description": "Primary button background when pressed in dark theme"
+        }
+      }
+    },
+    "secondary": {
+      "background": {
+        "hover": {
+          "value": "{color.primitive.gray.700}",
+          "type": "color",
+          "description": "Secondary button background on hover in dark theme"
+        },
+        "pressed": {
+          "value": "{color.primitive.gray.600}",
+          "type": "color",
+          "description": "Secondary button background when pressed in dark theme"
+        }
+      },
+      "text": {
+        "default": {
+          "value": "{color.primitive.gray.200}",
+          "type": "color",
+          "description": "Secondary button text in dark theme"
+        }
+      },
+      "border": {
+        "default": {
+          "value": "{color.primitive.gray.500}",
+          "type": "color",
+          "description": "Secondary button border in dark theme"
+        },
+        "hover": {
+          "value": "{color.primitive.gray.400}",
+          "type": "color",
+          "description": "Secondary button border on hover in dark theme"
+        }
+      }
+    }
+  }
+} 

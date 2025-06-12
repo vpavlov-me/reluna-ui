@@ -1,0 +1,225 @@
+{
+  "button": {
+    "primary": {
+      "background": {
+        "default": {
+          "value": "{color.primitive.blue.500}",
+          "type": "color",
+          "description": "Primary button background"
+        },
+        "hover": {
+          "value": "{color.primitive.blue.600}",
+          "type": "color",
+          "description": "Primary button background on hover"
+        },
+        "pressed": {
+          "value": "{color.primitive.blue.700}",
+          "type": "color",
+          "description": "Primary button background when pressed"
+        },
+        "disabled": {
+          "value": "{color.primitive.gray.300}",
+          "type": "color",
+          "description": "Primary button background when disabled"
+        }
+      },
+      "text": {
+        "default": {
+          "value": "{color.primitive.white}",
+          "type": "color",
+          "description": "Primary button text color"
+        },
+        "disabled": {
+          "value": "{color.primitive.gray.500}",
+          "type": "color",
+          "description": "Primary button text when disabled"
+        }
+      },
+      "border": {
+        "default": {
+          "value": "transparent",
+          "type": "color",
+          "description": "Primary button border"
+        }
+      }
+    },
+    "secondary": {
+      "background": {
+        "default": {
+          "value": "transparent",
+          "type": "color",
+          "description": "Secondary button background"
+        },
+        "hover": {
+          "value": "{color.primitive.gray.50}",
+          "type": "color",
+          "description": "Secondary button background on hover"
+        },
+        "pressed": {
+          "value": "{color.primitive.gray.100}",
+          "type": "color",
+          "description": "Secondary button background when pressed"
+        }
+      },
+      "text": {
+        "default": {
+          "value": "{color.primitive.gray.700}",
+          "type": "color",
+          "description": "Secondary button text color"
+        },
+        "disabled": {
+          "value": "{color.primitive.gray.400}",
+          "type": "color",
+          "description": "Secondary button text when disabled"
+        }
+      },
+      "border": {
+        "default": {
+          "value": "{color.primitive.gray.300}",
+          "type": "color",
+          "description": "Secondary button border"
+        },
+        "hover": {
+          "value": "{color.primitive.gray.400}",
+          "type": "color",
+          "description": "Secondary button border on hover"
+        }
+      }
+    },
+    "variants": {
+      "success": {
+        "background": {
+          "default": {
+            "value": "{color.primitive.green.500}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{color.primitive.green.600}",
+            "type": "color"
+          }
+        },
+        "text": {
+          "default": {
+            "value": "{color.primitive.white}",
+            "type": "color"
+          }
+        }
+      },
+      "warning": {
+        "background": {
+          "default": {
+            "value": "{color.primitive.yellow.500}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{color.primitive.yellow.600}",
+            "type": "color"
+          }
+        },
+        "text": {
+          "default": {
+            "value": "{color.primitive.white}",
+            "type": "color"
+          }
+        }
+      },
+      "danger": {
+        "background": {
+          "default": {
+            "value": "{color.primitive.red.500}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{color.primitive.red.600}",
+            "type": "color"
+          }
+        },
+        "text": {
+          "default": {
+            "value": "{color.primitive.white}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "size": {
+      "small": {
+        "padding": {
+          "horizontal": {
+            "value": "{spacing.3}",
+            "type": "dimension"
+          },
+          "vertical": {
+            "value": "{spacing.1}",
+            "type": "dimension"
+          }
+        },
+        "height": {
+          "value": "{spacing.8}",
+          "type": "dimension"
+        },
+        "fontSize": {
+          "value": "{typography.fontSize.xs}",
+          "type": "dimension"
+        }
+      },
+      "medium": {
+        "padding": {
+          "horizontal": {
+            "value": "{spacing.4}",
+            "type": "dimension"
+          },
+          "vertical": {
+            "value": "{spacing.2}",
+            "type": "dimension"
+          }
+        },
+        "height": {
+          "value": "{spacing.10}",
+          "type": "dimension"
+        },
+        "fontSize": {
+          "value": "{typography.fontSize.sm}",
+          "type": "dimension"
+        }
+      },
+      "large": {
+        "padding": {
+          "horizontal": {
+            "value": "{spacing.6}",
+            "type": "dimension"
+          },
+          "vertical": {
+            "value": "{spacing.3}",
+            "type": "dimension"
+          }
+        },
+        "height": {
+          "value": "{spacing.12}",
+          "type": "dimension"
+        },
+        "fontSize": {
+          "value": "{typography.fontSize.base}",
+          "type": "dimension"
+        }
+      }
+    },
+    "borderRadius": {
+      "value": "{radius.md}",
+      "type": "dimension",
+      "description": "Button border radius"
+    },
+    "transition": {
+      "duration": {
+        "value": "150ms",
+        "type": "duration",
+        "description": "Button transition duration"
+      },
+      "easing": {
+        "value": "ease-in-out",
+        "type": "string",
+        "description": "Button transition easing"
+      }
+    }
+  }
+} 
