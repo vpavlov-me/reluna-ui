@@ -126,7 +126,6 @@ export interface SwitchProps
 const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
   ({
     className,
-    state,
     size,
     label = 'Switcher',
     description = 'Description',

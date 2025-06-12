@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Button } from '../src/components/ui/button';
-import { Card } from '../src/components/ui/card';
-import { Input } from '../src/components/ui/input';
+import type { Meta, StoryObj } from '@storybook/react';
+import { Button } from '../src/components/ui/button/Button';
+import { Card } from '../src/components/ui/card/Card';
+import { Input } from '../src/components/ui/input/Input';
 import { Badge } from '../src/components/ui/badge/Badge';
 import { Switch } from '../src/components/ui/switch/Switch';
 import { Select } from '../src/components/ui/select/Select';
@@ -60,11 +60,11 @@ const ThemeDemo = () => {
       <Card className="p-6">
         <h2 className="text-2xl font-semibold mb-4">Buttons</h2>
         <div className="flex flex-wrap gap-4">
-          <Button>Primary Button</Button>
-          <Button variant="secondary">Secondary</Button>
-          <Button variant="outline">Outline</Button>
-          <Button variant="ghost">Ghost</Button>
-          <Button variant="destructive">Destructive</Button>
+          <Button variant="white" buttonType="primary">Primary Button</Button>
+          <Button variant="white" buttonType="secondary">Secondary</Button>
+          <Button variant="yellow" buttonType="primary">Yellow</Button>
+          <Button variant="red" buttonType="primary">Red</Button>
+          <Button variant="green" buttonType="primary">Green</Button>
         </div>
       </Card>
 

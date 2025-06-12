@@ -34,6 +34,9 @@ File Read scope and the Code Connect Write scope when generating the token.
 # Установите новый токен
 export FIGMA_ACCESS_TOKEN="your_new_token_here"
 
+# Или добавьте в .env файл:
+echo "FIGMA_ACCESS_TOKEN=your_new_token_here" >> .env
+
 # Создайте Code Connect из реального компонента
 npx figma connect create "https://www.figma.com/design/EQEAUMKv2qzUnwp4l9oj0K?node-id=2-674"
 

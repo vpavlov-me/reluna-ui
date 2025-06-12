@@ -8,14 +8,9 @@ const config: StorybookConfig = {
   ],
 
   addons: [
-    '@storybook/addon-links',
     '@storybook/addon-docs',
-    '@storybook/addon-a11y',
     '@storybook/addon-controls',
-    '@storybook/addon-viewport',
-    '@storybook/addon-measure',
-    '@storybook/addon-outline',
-    '@storybook/addon-backgrounds'
+    '@storybook/addon-a11y'
   ],
 
   framework: {

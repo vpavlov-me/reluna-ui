@@ -1,6 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import type { Meta, StoryObj } from '@storybook/react';
 import { Tooltip } from '../src/components/ui/tooltip/Tooltip';
-import { Button } from '../src/components/ui/button';
+import { Button } from '../src/components/ui/button/Button';
 
 const meta: Meta<typeof Tooltip> = {
   title: 'Components/Tooltip',
@@ -10,9 +10,17 @@ const meta: Meta<typeof Tooltip> = {
   },
   tags: ['autodocs'],
   argTypes: {
-    placement: {
+    side: {
       control: 'select',
-      options: ['top', 'bottom', 'left', 'right', 'top-start', 'top-end', 'bottom-start', 'bottom-end'],
+      options: ['top', 'bottom', 'left', 'right'],
+    },
+    align: {
+      control: 'select',
+      options: ['start', 'center', 'end'],
+    },
+    variant: {
+      control: 'select',
+      options: ['default', 'light', 'error', 'success', 'warning'],
     },
   },
 };
@@ -30,37 +38,37 @@ export const Default: Story = {
 export const Placements: Story = {
   render: () => (
     <div className="grid grid-cols-3 gap-8 p-8">
-      <Tooltip content="Top tooltip" placement="top">
+      <Tooltip content="Top tooltip" side="top">
         <Button>Top</Button>
       </Tooltip>
       
-      <Tooltip content="Top start tooltip" placement="top-start">
+      <Tooltip content="Top start tooltip" side="top" align="start">
         <Button>Top Start</Button>
       </Tooltip>
       
-      <Tooltip content="Top end tooltip" placement="top-end">
+      <Tooltip content="Top end tooltip" side="top" align="end">
         <Button>Top End</Button>
       </Tooltip>
       
-      <Tooltip content="Left tooltip" placement="left">
+      <Tooltip content="Left tooltip" side="left">
         <Button>Left</Button>
       </Tooltip>
       
       <div></div>
       
-      <Tooltip content="Right tooltip" placement="right">
+      <Tooltip content="Right tooltip" side="right">
         <Button>Right</Button>
       </Tooltip>
       
-      <Tooltip content="Bottom tooltip" placement="bottom">
+      <Tooltip content="Bottom tooltip" side="bottom">
         <Button>Bottom</Button>
       </Tooltip>
       
-      <Tooltip content="Bottom start tooltip" placement="bottom-start">
+      <Tooltip content="Bottom start tooltip" side="bottom" align="start">
         <Button>Bottom Start</Button>
       </Tooltip>
       
-      <Tooltip content="Bottom end tooltip" placement="bottom-end">
+      <Tooltip content="Bottom end tooltip" side="bottom" align="end">
         <Button>Bottom End</Button>
       </Tooltip>
     </div>
@@ -70,8 +78,8 @@ export const Placements: Story = {
 export const WithDelay: Story = {
   args: {
     content: 'This tooltip has a delay',
-    showDelay: 1000,
-    hideDelay: 500,
+    delayDuration: 1000,
+    skipDelayDuration: 500,
     children: <Button>Hover with delay</Button>,
   },
 };
@@ -137,12 +145,12 @@ export const ControlledTooltip: Story = {
   render: () => {
     return (
       <div className="space-x-4">
-        <Tooltip content="Always visible tooltip" open={true}>
-          <Button>Always visible</Button>
+        <Tooltip content="Always visible tooltip" disabled={false}>
+          <Button>Hover me</Button>
         </Tooltip>
         
-        <Tooltip content="Never visible tooltip" open={false}>
-          <Button>Never visible</Button>
+        <Tooltip content="Disabled tooltip" disabled={true}>
+          <Button>Disabled tooltip</Button>
         </Tooltip>
       </div>
     );

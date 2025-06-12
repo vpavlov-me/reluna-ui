@@ -109,7 +109,30 @@ export interface AccordionMultipleProps
 export type AccordionProps = AccordionSingleProps | AccordionMultipleProps
 
 const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
-  ({ className, variant = 'default', type, children, ...props }, ref) => {
+  ({ type, variant, className, children, ...props }, ref) => {
+    // Always call hooks at the top level
+    const [singleInternalValue, setSingleInternalValue] = useState('')
+    const [multipleInternalValue, setMultipleInternalValue] = useState<string[]>([])
+
+    // Effects for both types - always called
+    React.useEffect(() => {
+      if (type === 'single') {
+        const { defaultValue } = props as AccordionSingleProps
+        if (defaultValue && singleInternalValue === '') {
+          setSingleInternalValue(defaultValue)
+        }
+      }
+    }, [type, props, singleInternalValue])
+
+    React.useEffect(() => {
+      if (type === 'multiple') {
+        const { defaultValue } = props as AccordionMultipleProps
+        if (defaultValue && multipleInternalValue.length === 0) {
+          setMultipleInternalValue(defaultValue)
+        }
+      }
+    }, [type, props, multipleInternalValue.length])
+
     // Handle single accordion
     if (type === 'single') {
       const {
@@ -120,14 +143,13 @@ const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
         ...singleProps
       } = props as AccordionSingleProps
 
-      const [internalValue, setInternalValue] = useState(defaultValue || '')
-      const currentValue = value !== undefined ? value : internalValue
+      const currentValue = value !== undefined ? value : (singleInternalValue || defaultValue || '')
 
       const handleValueChange = (itemValue: string) => {
         const newValue = currentValue === itemValue && collapsible ? '' : itemValue
         
         if (value === undefined) {
-          setInternalValue(newValue)
+          setSingleInternalValue(newValue)
         }
         onValueChange?.(newValue)
       }
@@ -161,8 +183,7 @@ const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
       ...multipleProps
     } = props as AccordionMultipleProps
 
-    const [internalValue, setInternalValue] = useState(defaultValue || [])
-    const currentValue = value !== undefined ? value : internalValue
+    const currentValue = value !== undefined ? value : (multipleInternalValue.length > 0 ? multipleInternalValue : defaultValue || [])
 
     const handleValueChange = (itemValue: string) => {
       const newValue = currentValue.includes(itemValue)
@@ -170,7 +191,7 @@ const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
         : [...currentValue, itemValue]
       
       if (value === undefined) {
-        setInternalValue(newValue)
+        setMultipleInternalValue(newValue)
       }
       onValueChange?.(newValue)
     }
@@ -206,7 +227,7 @@ export interface AccordionItemProps
 }
 
 const AccordionItem = forwardRef<HTMLDivElement, AccordionItemProps>(
-  ({ className, value, disabled = false, children, ...props }, ref) => {
+  ({ className, children, value: _value, ...props }, ref) => {
     const { variant } = useAccordion()
 
     return (
@@ -214,10 +235,10 @@ const AccordionItem = forwardRef<HTMLDivElement, AccordionItemProps>(
         ref={ref}
         className={cn(
           accordionItemVariants({ variant }),
-          disabled && 'opacity-50 pointer-events-none',
+          props.disabled && 'opacity-50 pointer-events-none',
           className
         )}
-        data-state={disabled ? 'disabled' : 'enabled'}
+        data-state={props.disabled ? 'disabled' : 'enabled'}
         {...props}
       >
         {children}
